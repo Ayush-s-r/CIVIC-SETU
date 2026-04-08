@@ -12,7 +12,7 @@ import {
 
 export default function AdminAnalytics() {
   const [analytics, setAnalytics] = useState({
-    totalComplaints: 0,
+    totalComplaints: 5,
     resolvedComplaints: 0,
     pendingComplaints: 0,
     inProgressComplaints: 0,

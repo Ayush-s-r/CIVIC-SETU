@@ -3,7 +3,7 @@ const cors = require("cors");
 const path = require("path");
 const connectDB = require("./config/db.js");
 const dotenv = require("dotenv");
-
+const morgan = require("morgan");
 // Import routes
 const userRoutes = require("./routes/userRoutes.js");
 const complaintRoutes = require("./routes/complaintRoutes.js");
@@ -15,6 +15,7 @@ const reportRoutes = require("./routes/reportRoutes.js");
 const detectionRoutes = require("./routes/detectionRoutes.js");
 
 const app = express();
+app.use(morgan('dev'))
 
 // Middleware
 app.use(express.json());

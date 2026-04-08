@@ -88,11 +88,12 @@ export default function App() {
         } />
 
         {/* Admin Routes */}
-        <Route path="/admin" element={<AdminLayout><AdminDashboard /></AdminLayout>} />
+        <Route path="/admin" element={<AdminLayout><AdminDashboard /></AdminLayout>}/>
         <Route path="/admin/complaints" element={<AdminLayout><AdminComplaints /></AdminLayout>} />
         <Route path="/admin/analytics" element={<AdminLayout><AdminAnalytics /></AdminLayout>} />
         <Route path="/admin/users" element={<AdminLayout><div className="p-6"><h1 className="text-2xl font-bold">Users Management</h1><p>User management functionality coming soon...</p></div></AdminLayout>} />
         <Route path="/admin/departments" element={<AdminLayout><div className="p-6"><h1 className="text-2xl font-bold">Departments Management</h1><p>Department management functionality coming soon...</p></div></AdminLayout>} />
+        
 
         {/* Citizen Routes */}
         <Route path="/citizen" element={<UserLayout><CitizenDashboard /></UserLayout>} />

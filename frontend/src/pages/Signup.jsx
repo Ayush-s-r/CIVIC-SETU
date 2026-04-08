@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { authAPI, setAuthToken } from "../utils/api";
+import { authAPI } from "../api";
+import { setAuthToken } from "../utils/token";
+
 
 export default function Signup() {
   const navigate = useNavigate();
